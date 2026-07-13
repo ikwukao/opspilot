@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opspilot"
+version = "0.1.0"
+description = "A modern DevOps automation platform for Linux."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Ikwuka Okoye" }
+]
+keywords = [
+    "devops",
+    "automation",
+    "linux",
+    "cli",
+    "python",
+    "go",
+    "golang",
+    "bash",
+    "docker",
+    "docker-compose",
+    "github-actions",
+    "kubernetes",
+    "ansible",
+    "terraform",
+    "prometheus",
+    "grafana",
+    "loki",
+    "opentelemetry",
+    "helm"
+    "sql",
+    "postgresql",
+    "cloud",
+    "devops-operating-system",
+    "devops-engineering"
+    "platform-engineering",
+    "devsecops"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Utilities"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ikwukao/opspilot"
+Repository = "https://github.com/ikwukao/opspilot"
+Issues = "https://github.com/ikwukao/opspilot/issues"
+
+[project.scripts]
+opspilot = "opspilot.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["opspilot"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
