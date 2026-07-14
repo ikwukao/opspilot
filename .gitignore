@@ -55,6 +55,9 @@ coverage.xml
 .mypy_cache/
 .pytype/
 
+# Version Checkers
+.python-version
+
 # Ruff
 .ruff_cache/
 
