@@ -7,6 +7,7 @@ from __future__ import annotations
 import argparse
 
 from opspilot import __version__
+from opspilot.commands.info import run as info_run
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -51,8 +52,7 @@ def run() -> int:
         return 0
 
     if args.command == "info":
-        print("The 'info' capability is under development.")
-        return 0
+        return info_run()
 
     parser.error(f"Unknown command: {args.command}")
     return 2
