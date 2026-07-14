@@ -295,6 +295,19 @@ opspilot processes
 
 ---
 
+## Minimum Supported Version of Technologies
+
+| **Technology**     | **Minimum Version**                               |
+| ------------------ | ------------------------------------------------- |
+| Python             | 3.12                                              |
+| Go                 | 1.24 (or the current stable version you're using) |
+| Bash               | 5.1+                                              |
+| Docker             | Current stable                                    |
+| Kubernetes         | Current stable                                    |
+| Terraform/OpenTofu | Current stable                                    |
+
+---
+
 ## 🗺 Roadmap
 
 ### Version 0.1
@@ -440,8 +453,11 @@ See the **LICENSE** file for details.
 ## 👨‍💻 Author
 
 Ikwuka Okoye
+
 DevOps Engineer
+
 GitHub: [https://github.com/ikwukao](https://github.com/ikwukao)
+
 X (Twitter): [https://x.com/ikwukao_](https://x.com/ikwukao_)
 
 ---
