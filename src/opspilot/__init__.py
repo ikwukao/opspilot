@@ -10,7 +10,6 @@ Repository:
     https://github.com/ikwukao/opspilot
 """
 
-
 from __future__ import annotations
 
 __title__ = "opspilot"
@@ -19,8 +18,6 @@ __author__ = "Ikwuka Okoye"
 __license__ = "MIT"
 
 __all__ = [
-        "__title__",
-        "__version__",
+    "__title__",
+    "__version__",
 ]
-
-

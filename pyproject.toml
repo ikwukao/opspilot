@@ -31,12 +31,12 @@ keywords = [
     "grafana",
     "loki",
     "opentelemetry",
-    "helm"
+    "helm",
     "sql",
     "postgresql",
     "cloud",
     "devops-operating-system",
-    "devops-engineering"
+    "devops-engineering",
     "platform-engineering",
     "devsecops"
 ]
