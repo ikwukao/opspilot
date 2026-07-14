@@ -1,31 +1,24 @@
 """
-Core functionality for collecting basic system information.
+Collect system information.
 """
 
 from __future__ import annotations
 
 import platform
-from dataclasses import dataclass
+import socket
 
-
-@dataclass(frozen=True)
-class SystemInfo:
-    """Represents basic information about the host system."""
-
-    operating_system: str
-    release: str
-    machine: str
-    processor: str
-    python_version: str
+from opspilot.models.system import SystemInfo
 
 
 def get_system_info() -> SystemInfo:
-    """Collect basic information about the current system."""
+    """Collect information about the current host."""
 
     return SystemInfo(
         operating_system=platform.system(),
         release=platform.release(),
+        version=platform.version(),
         machine=platform.machine(),
-        processor=platform.processor(),
+        processor=platform.processor() or "Unknown",
         python_version=platform.python_version(),
+        hostname=socket.gethostname(),
     )
